@@ -80,12 +80,12 @@ public class MainActivity extends AppCompatActivity {
         int[] flowers = {
                 R.drawable.rose,
                 R.drawable.sunflower,
-                R.drawable.tulip,
+                R.drawable.tulips,
                 R.drawable.daisy,
                 R.drawable.lily,
                 R.drawable.orchid,
-                R.drawable.lavender,
-                R.drawable.cherry_blossom
+                R.drawable.hydrangea,
+                R.drawable.gumamela
         };
 
         for (int flower : flowers) {
@@ -106,8 +106,7 @@ public class MainActivity extends AppCompatActivity {
             params.setGravity(Gravity.CENTER);
             button.setLayoutParams(params);
 
-            button.setBackgroundResource(R.drawable.card_back_flower);
-            button.setTag(i);
+            button.setBackgroundResource(R.drawable.flower_card_back);            button.setTag(i);
             button.setPadding(0, 0, 0, 0);
             button.setAllCaps(false);
             button.setOnClickListener(cardClickListener);
@@ -144,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void hideCard(int index) {
-        cardButtons[index].setBackgroundResource(R.drawable.card_back_flower);
+        cardButtons[index].setBackgroundResource(R.drawable.flower_card_back);
     }
 
     private void checkMatch() {
